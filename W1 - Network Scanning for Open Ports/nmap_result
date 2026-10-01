@@ -1,0 +1,45 @@
+nmap -sn 192.168.191.128/24
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-10-01 10:22 -0400
+Nmap scan report for 192.168.191.1
+Host is up (0.0026s latency).
+MAC Address: 00:50:56:C0:00:08 (VMware)
+Nmap scan report for 192.168.191.2
+Host is up (0.0019s latency).
+MAC Address: 00:50:56:E8:BC:BE (VMware)
+Nmap scan report for 192.168.191.254
+Host is up (0.00047s latency).
+MAC Address: 00:50:56:F5:80:48 (VMware)
+Nmap scan report for 192.168.191.128
+Host is up.
+Nmap done: 256 IP addresses (4 hosts up) scanned in 4.09 seconds
+
+nmap -T4 -F 192.168.191.128/24
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-10-01 10:23 -0400
+Nmap scan report for 192.168.191.1
+Host is up (0.0011s latency).
+Not shown: 97 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+3306/tcp open  mysql
+7070/tcp open  realserver
+MAC Address: 00:50:56:C0:00:08 (VMware)
+
+Nmap scan report for 192.168.191.2
+Host is up (0.0010s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: 00:50:56:E8:BC:BE (VMware)
+
+Nmap scan report for 192.168.191.254
+Host is up (0.00025s latency).
+All 100 scanned ports on 192.168.191.254 are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+MAC Address: 00:50:56:F5:80:48 (VMware)
+
+Nmap scan report for 192.168.191.128
+Host is up.
+All 100 scanned ports on 192.168.191.128 are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Nmap done: 256 IP addresses (4 hosts up) scanned in 17.38 seconds
